@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>AgriConnect</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <style>
+      
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; 
+      }
+
+      #progress-bar {
+        width: 80%;
+        height: 10px;
+        background: #e0e0e0;
+        margin: 20px 0;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      #progress-bar div {
+        height: 100%;
+        width: 0;
+        background: #4caf50;
+        transition: width 0.2s;
+      }
+
+      #progress-text {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        margin-top: 5px;
+        color: #555;
+      }
+
+      
+      body.loaded #preloader {
+        display: none;
+      }
+    </style>
+  </head>
+  <div id="preloader">
+    <dotlottie-player
+      src="https://lottie.host/8a94fe11-54ee-4b4e-b39f-f7bd18e659cb/cmRshWKOqG.lottie"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay
+    >
+    </dotlottie-player>
+    <div id="progress-bar">
+      <div></div>
+    </div>
+    <div id="progress-text">0%</div>
+  </div>
+  
+  <body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <!--Header starts-->
+    <div id="google_element"></div>
+    <script type="text/javascript">
+      function loadGoogleTranslate() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_element');
+      }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <div class="banner">
+      
+
+      <header class="header">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-tractor"></i> AgriConnect
+        </a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="https://soujanya2204.github.io/cart_agri/" target="_blank">Products</a>
+          <a href="https://aryanrath123.github.io/mitra-agri/" target="_blank">Mitra</a>
+          <a href="#review">Review</a>
+          <a href="#blogs">Blogs</a>
+        </nav>
+
+       
+      </header>
+
+      <!--Header part ends-->
+
+      <!--Home part ends-->
+
+      <section class="home" id="home">
+        <div class="content">
+          <h3>Agri <span>Connect</span> 
+          <p>
+            Welcome to Agri Connect, where agriculture meets innovation. Our platform bridges the gap between farmers, buyers, and suppliers, fostering collaboration for a sustainable future. Whether you're looking for smarter farming solutions, market opportunities, or the latest industry insights, Agri Connect empowers you to grow and thrive in today's dynamic agricultural landscape.
+          </p>
+          <a href="https://soujanya2204.github.io/agri_explore/" class="btn-1" target="_blank">Explore</a>
+        </div>
+      </section>
+    </div>
+
+    <!--Home part ends-->
+
+    <!--Features part starts-->
+
+    <section class="features" id="features">
+      <h1 class="heading">Our <span>Features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="feature1.png" alt="" />
+          <h3>Crop Recommendation System</h3>
+          <p>
+            Get tailored crop suggestions based on soil nutrients, weather conditions, and rainfall. Maximize yield with data-driven farming insights!
+          </p>
+          <a href="https://crop-predictor-9j3z.onrender.com/" class="btn-2" target="_blank">Use It !</a>
+        </div>
+
+        <div class="box">
+          <img src="feature2.png" alt="" />
+          <h3>Vegetable Price Prediction</h3>
+          <p>
+            Stay ahead with price trends! View charts and predictions for vegetable prices to make smarter selling and purchasing decisions.
+          </p>
+          <a href="https://crop-price-meqh.onrender.com/" class="btn-2" target="_blank">Use It !</a>
+        </div>
+
+        <div class="box">
+          <img src="feature3.png" alt="" />
+          <h3>Crop Yield Prediction</h3>
+          <p>
+            Accurately predict your harvest using key inputs like precipitation, specific humidity, relative humidity, and temperature. Plan smarter for maximum productivity!
+          </p>
+          <a href="https://crop-yield-prediction-56u4.onrender.com/" class="btn-2" target="_blank">Use It !</a>
+        </div>
+
+        <div class="box">
+          <img src="f4.png" alt="" />
+          <h3>Khoj</h3>
+          <p>
+            Khoj helps farmers find the nearest markets quickly, making it easier to connect, sell produce, and seize better opportunities.
+          </p>
+          <a href="https://aryanrath123.github.io/agric-map/" class="btn-2" target="_blank">Use It !</a>
+        </div>
+
+        
+
+        
+       
+      </div>
+    </section>
+
+    <!--Features part ends-->
+    <!--Review part starts-->
+
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span>Review</span></h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="review1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              architecto, saepe non id odit voluptas doloribus velit. Illo
+              facilis maxime praesentium illum corporis nostrum, velit animi
+              quibusdam eum rem molestiae?
+            </p>
+            <h3>Person 1</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="review3.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              architecto, saepe non id odit voluptas doloribus velit. Illo
+              facilis maxime praesentium illum corporis nostrum, velit animi
+              quibusdam eum rem molestiae?
+            </p>
+            <h3>Person 2</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="review4.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              architecto, saepe non id odit voluptas doloribus velit. Illo
+              facilis maxime praesentium illum corporis nostrum, velit animi
+              quibusdam eum rem molestiae?
+            </p>
+            <h3>Person 3</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="review2.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              architecto, saepe non id odit voluptas doloribus velit. Illo
+              facilis maxime praesentium illum corporis nostrum, velit animi
+              quibusdam eum rem molestiae?
+            </p>
+            <h3>Person 4</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Review part ends-->
+
+    <!--Blog part starts-->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Latest <span>Blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="blog1.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>By User</a>
+              <a href="#"><i class="fas fa-calendar-alt"></i>13th Sept, 2024</a>
+            </div>
+            <h3>Potato Price Hike</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              consectetur, ipsum non consectetur commodo, mauris mauris
+              pellentesque est, non semper velit neque id ex.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="blog2.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>By User</a>
+              <a href="#"><i class="fas fa-calendar-alt"></i>13th Sept, 2024</a>
+            </div>
+            <h3>Onion price reduced</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              consectetur, ipsum non consectetur commodo, mauris mauris
+              pellentesque est, non semper velit neque id ex.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="blog3.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>By User</a>
+              <a href="#"><i class="fas fa-calendar-alt"></i>13th Sept, 2024</a>
+            </div>
+            <h3>Odisha faced 40% less rain than 2023</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              consectetur, ipsum non consectetur commodo, mauris mauris
+              pellentesque est, non semper velit neque id ex.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Blog part ends-->
+
+    <!--Footer part starts-->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fa-solid fa-tractor"></i> AgriConnect</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Contact Us</h3>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +91-123-456-6543</a
+          >
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +91-321-789-5632</a
+          >
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> agriconnect@gmail.com</a
+          >
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India -
+            752054</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Home</a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Features</a
+          >
+          <a href="https://soujanya2204.github.io/cart_agri/" class="links" target="_blank">
+            <i class="fas fa-arrow-right"></i> Products</a
+          >
+          <a href="http://127.0.0.2:5502/index.html" class="links" target="_blank">
+            <i class="fas fa-arrow-right"></i> Mitra</a
+          >
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Review</a
+          >
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> Blogs</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>NewsLetter</h3>
+          <p>Subscribe for latest updates</p>
+          <input type="email" placeholder="Your email" class="email" />
+          <input type="submit" value="Subscribe" class="btn" />
+        </div>
+      </div>
+
+      <div class="credit">
+        Created By Team <span> "The Syntax Slayers" </span> | All rights
+        reserved © 2024
+      </div>
+    </section>
+
+    <!--Footer part ends-->
+    <script>
+      
+      const progressBar = document.querySelector("#progress-bar div");
+      const progressText = document.getElementById("progress-text");
+      const content = document.getElementById("content");
+
+      let progress = 0;
+
+      function updateProgress() {
+        progress += 5; 
+        progressBar.style.width = progress + "%";
+        progressText.textContent = progress + "%";
+
+        if (progress < 100) {
+          setTimeout(updateProgress, 50); 
+        } else {
+          document.body.classList.add("loaded"); 
+          content.style.display = "block"; 
+        }
+      }
+
+      
+      window.addEventListener("load", () => {
+        updateProgress();
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
